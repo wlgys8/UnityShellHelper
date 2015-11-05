@@ -168,6 +168,9 @@ public class ShellHelper  {
 	
 	public void AddEnvironmentVars(params string[] vars){
 		for(int i = 0;i<vars.Length;i++){
+			if(vars[i] == null){
+				continue;
+			}
 			if(string.IsNullOrEmpty(vars[i].Trim())){
 				continue;
 			}
