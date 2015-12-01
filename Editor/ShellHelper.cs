@@ -56,7 +56,10 @@ public class ShellHelper  {
 	private static void OnUpdate(){
 		for(int i = 0;i<_queue.Count;i++){
 			try{
-				_queue[i]();
+				var action = _queue[i];
+				if(action != null){
+					action();
+				}
 			}catch(System.Exception e){
 				UnityEngine.Debug.LogException(e);
 			}
