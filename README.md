@@ -1,3 +1,10 @@
+# Attention
+
+check new version of unity shell which has better api design :
+
+https://github.com/wlgys8/UnityShell 
+
+
 # UnityShellHelper
 
 This helper is designed for excuting shell command in unity editor.
